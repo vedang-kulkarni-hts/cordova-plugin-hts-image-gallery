@@ -36,8 +36,7 @@
 
     <header-file src="src/ios/HWPHello.h" target-dir="HelloPlugin"/>
     <source-file src="src/ios/HWPHello.m" target-dir="HelloPlugin"/>
-    <source-file src="src/ios/HWPHello.swift" target-dir="HelloPlugin"/>
-  </platform>
+      </platform>
 
   <platform name="wp7">
     <source-file src="src/wp7/Hello.cs"/>
