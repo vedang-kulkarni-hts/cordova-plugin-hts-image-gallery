@@ -1,0 +1,17 @@
+{
+  "name": "cordova-plugin-hts-image-gallery",
+  "version": "0.1.0",
+  "description": "simple plugin to list images in gallery",
+  "cordova": {
+    "id": "cordova-plugin-hts-image-gallery",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "author": "vedang.kulkarni@hifitechnologysolutions.com",
+  "license": "ISC"
+}

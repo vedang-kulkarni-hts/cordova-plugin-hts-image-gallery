@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin 
+	id="cordova-plugin-hts-image-gallery" 
+	version="0.1.0" 
+	xmlns="http://apache.org/cordova/ns/plugins/1.0" 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	>
+	<name>HTSImageGallery</name>
+	<js-module name="HTSImageGallery" src="www/HTSImageGallery.js">
+		<clobbers target="cordova.plugins.HTSImageGallery" />
+	</js-module>
+	<platform name="ios">
+		<config-file parent="/*" target="config.xml">
+			<feature name="HTSImageGallery">
+				<param name="ios-package" value="HTSImageGallery" />
+			</feature>
+		</config-file>
+		 <preference name="PHOTO_LIBRARY_USAGE_DESCRIPTION" default=" "/>
+        <config-file target="*-Info.plist" parent="NSPhotoLibraryUsageDescription">
+            <string>$PHOTO_LIBRARY_USAGE_DESCRIPTION</string>
+        </config-file>
+        <source-file src="src/ios/PhotoLibrary.swift" />
+	</platform>
+</plugin>
